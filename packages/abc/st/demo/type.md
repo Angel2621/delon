@@ -40,17 +40,7 @@ const r = (min: number, max: number) => Math.floor(Math.random() * (max - min + 
     <st #st [data]="users" [columns]="columns" [page]="{ position: 'both' }"></st>
   `,
 })
-export class DemoComponent {
-  users: any[] = [];
-  columns: STColumn[] = [
-    { title: '行号', type: 'no' },
-    { title: '姓名', index: 'name' },
-    { title: '年龄', index: 'age', type: 'number' },
-    { title: 'tag', index: 'tag', type: 'tag', tag: TAG },
-    { title: 'badge', index: 'badge', type: 'badge', badge: BADGE },
-    { title: 'Enum', index: 'enum', type: 'enum', enum: { 1: '壹', 2: '贰', 3: '叁' } },
-    { title: 'yn', index: 'yn', type: 'yn' },
-  ];
+
 
   reload(): void {
     this.users = Array(10)
